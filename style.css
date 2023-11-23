@@ -21,7 +21,7 @@
 .right-container{
     background-color: var(--dark-color);
     width:60vw;
-    height: 100vh;
+    height: 100%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -62,6 +62,7 @@ form > p {
     outline: none;
     color:var(--highlight-color);
     transition: border var(--transition-speed);
+    
 }
 .col > input:focus{
     border:2px solid var(--light-color);
@@ -103,8 +104,15 @@ body{
  
 
 .col  {
-    
+    max-width: calc(50% - 20px);
     padding:5px;
+    width: calc(50% - 20px); /* Afișează două coloane pe linie */
+    min-width: 200px; /* Lățimea minimă a coloanei */
+    max-width: 300px; /* Lățimea maximă a coloanei */
+    float: left; /* Face ca coloanele să fie plasate una lângă alta */
+    margin-right: 20px; /* Spațiere între coloane */
+    box-sizing: border-box; /* Asigură includerea padding-ului și a margin-ului în lățimea coloanei */
+    padding: 5px;
 }
 
 .error-pop{
