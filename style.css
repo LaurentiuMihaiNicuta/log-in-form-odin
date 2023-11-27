@@ -1,165 +1,72 @@
-:root{
-    --pale-green: #7dd87d;
-    --dark-green: #4c9173;
-    --dark-color: #430f58;
-    --light-candalebra: #906387;
-    --light-color: #a9c52f;
-    --m-font:1.5em;
-    --l-font:3rem;
-    --s-font:0.7em;
-    --general-padding:10px;
-    --highlight-color: white;
-    --transition-speed:0.7s;
+body { 
+    height: 100vh;
+    background-color: red;
+    margin:0px;
+    display:flex;
 }
 
+
 .left-container{
-    background-color: var(--light-color);
-    width: 40vw;
-    height: 100vh;
+    background-color: green;
+    width: 40%;
+    height: 100%;
+
 }
 
 .right-container{
-    background-color: var(--dark-color);
-    width:60vw;
+    background-color: blue;
+    width:60%;
     height: 100%;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-
-}
-form > button {
-    background-color: var(--light-color);
-    align-self: flex-start;
-    margin-top:10px;
-    padding:20px;
-    border:none;
-    border-radius:20px;
-    font-size: var(--m-font);
-    color: var(--highlight-color);
-    margin-bottom:10px;
-    display:block;
-    transition: background-color var(--transition-speed);
 }
 
-form > button:hover{
-    background-color: var(--dark-color);
-    border:2px solid var(--light-color);
-    color: var(--light-color);
-}
-form > p {
-    align-self: flex-start;
-   
-}
-
-.col > input{
-    padding:10px;
-    border:none;
-    background-color: var(--dark-color);
-    border-bottom: 1px  solid var(--light-color);
-    font-size: var(--m-font);
-    border-radius:15px;
-    outline: none;
-    color:var(--highlight-color);
-    transition: border var(--transition-speed);
-    
-}
-.col > input:focus{
-    border:2px solid var(--light-color);
-}
-
-body{
-    height:100vh;
-    display:flex;
-    
-}
-
-.main-container{
-    
-    height: 50%;
+.form-container{
+    border:1px solid black;
+    background-color: white;
     width: 90%;
-    display:flex;
+    height: 70%;
+    display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+}
+
+.container{
+    background-color: wheat;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
-    
 }
 
-/*.main-container > h1{
-    color:blue;
-    position: relative;
-    right:9em;
-    bottom:0.5em;
-}*/
-
-.main-container > h1  {
-    align-self:flex-start ;
-    margin-left:15px;
-    color:var(--highlight-color);
-    font-size: var(--l-font);
-    
+.container > h1{
+    align-self: flex-start;
+    margin-left:40px;
 }
 
- 
-
-.col  {
-    max-width: calc(50% - 20px);
-    padding:5px;
-    width: calc(50% - 20px); /* Afișează două coloane pe linie */
-    min-width: 200px; /* Lățimea minimă a coloanei */
-    max-width: 300px; /* Lățimea maximă a coloanei */
-    float: left; /* Face ca coloanele să fie plasate una lângă alta */
-    margin-right: 20px; /* Spațiere între coloane */
-    box-sizing: border-box; /* Asigură includerea padding-ului și a margin-ului în lățimea coloanei */
-    padding: 5px;
-}
-
-.error-pop{
-    display:none;
-    font-size: var(--s-font);
-    color: var(--highlight-color);
-    
-}
 .row{
     
-    padding:2em;
-    width:105vh;
-    padding-left:5px;
-    padding-right:5px;
+    background-color: green;
+    padding:20px;
+    width:95%
     
+}
+
+.row> label{
+    margin:20px;
+}
+
+.row > input {
+    width:25%
 }
 
 .password-pop, .confirmed-password-pop{
-    display: none;
-    font-size: var(--s-font);
-    color: var(--highlight-color);
-}
-
-
-
-
-.sub-text{
-    font-size:var(--s-font + 0.5 em);
-    color:var(--dark-green);
-    display:inline;
-    
-}
-
-.sub-sub-text{
-    font-size: var(--m-font);
-    display:inline;
-    color: var(--light-color);
-}
-
-.wallpapper{
-    border:10px solid var(--dark-color);
-    height: 100vh;
-    width: 40vw;
-    transition:border 1s;
-    
-}
-.wallpapper:hover{
-    border:40px solid var(--light-color);
-
+    background-color: red;
+    width: 20%;
 }
